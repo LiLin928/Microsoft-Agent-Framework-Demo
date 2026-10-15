@@ -1,0 +1,64 @@
+# ===================== 构建产物 =====================
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+artifacts/
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+
+# ===================== IDE / 编辑器 =====================
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+*.sln.iml
+.fleet/
+
+# ===================== NuGet =====================
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+
+# ===================== 发布 / 部署 =====================
+[Pp]ublish/
+publish/
+*.publish.xml
+*.publishproj
+*.pubxml.user
+appsettings.Production.json
+
+# ===================== 测试 =====================
+[Tt]est[Rr]esult*/
+TestResults/
+coverage*.json
+*.coverage
+*.coveragexml
+
+# ===================== 日志 / 临时文件 =====================
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===================== 用户敏感/本地配置 =====================
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.env
+
+# ===================== 其他 =====================
+*.DotSettings.user

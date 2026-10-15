@@ -1,0 +1,36 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Microsoft Agent Framework (MAF) -->
+    <PackageVersion Include="Microsoft.Agents.AI" Version="1.25.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.Abstractions" Version="1.25.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.Harness" Version="1.25.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.LocalCodeAct" Version="1.25.0-preview.261014.1" />
+
+    <!-- Microsoft.Extensions.AI (MEAI) -->
+    <PackageVersion Include="Microsoft.Extensions.AI" Version="10.11.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI.Abstractions" Version="10.11.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.11.0" />
+    <PackageVersion Include="OpenAI" Version="2.14.0" />
+    <PackageVersion Include="Azure.AI.OpenAI" Version="2.1.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+
+    <!-- MCP C# SDK -->
+    <PackageVersion Include="ModelContextProtocol" Version="2.2.0" />
+    <PackageVersion Include="ModelContextProtocol.Core" Version="2.2.0" />
+    <PackageVersion Include="ModelContextProtocol.AspNetCore" Version="2.2.0" />
+
+    <!-- Web / Swagger -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+
+    <!-- 知识库（迁移自 SK8：SqlSugar + Pgvector + 雪花ID） -->
+    <PackageVersion Include="SqlSugarCore" Version="5.1.4.188" />
+    <!-- 覆盖 SqlSugarCore 的传递依赖，修复 GHSA-2m69-gcr7-jv3q 高危漏洞 -->
+    <PackageVersion Include="SQLitePCLRaw.lib.e_sqlite3" Version="3.50.3" />
+    <PackageVersion Include="Pgvector" Version="0.3.1" />
+    <PackageVersion Include="Yitter.IdGenerator" Version="1.0.14.0" />
+  </ItemGroup>
+</Project>

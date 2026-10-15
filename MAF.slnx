@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MafAgent.Api/MafAgent.Api.csproj" />
+    <Project Path="src/MafAgent.Demo/MafAgent.Demo.csproj" />
+    <Project Path="src/McpService/McpService.csproj" />
+    <Project Path="src/McpStdio/McpStdio.csproj" />
+  </Folder>
+</Solution>
